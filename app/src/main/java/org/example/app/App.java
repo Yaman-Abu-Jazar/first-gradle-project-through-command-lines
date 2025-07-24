@@ -28,4 +28,8 @@ public class App {
 
         return factorial;
     }
+
+    public Double multiplication(Number a, Number b){
+        return a.doubleValue() * b.doubleValue();
+    }
 }
