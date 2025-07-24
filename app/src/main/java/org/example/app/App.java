@@ -3,13 +3,11 @@
  */
 package org.example.app;
 
+import org.apache.commons.text.WordUtils;
+import static org.example.app.MessageUtils.getMessage;
 import org.example.list.LinkedList;
-
 import static org.example.utilities.StringUtils.join;
 import static org.example.utilities.StringUtils.split;
-import static org.example.app.MessageUtils.getMessage;
-
-import org.apache.commons.text.WordUtils;
 
 public class App {
     public static void main(String[] args) {
@@ -17,5 +15,17 @@ public class App {
         tokens = split(getMessage());
         String result = join(tokens);
         System.out.println(WordUtils.capitalize(result));
+
+
+    }
+
+    public static int factorial(int a){
+        int factorial = 1;
+
+        for(int i = a; i > 1 ; i--){
+            factorial *= i;
+        }
+
+        return factorial;
     }
 }
